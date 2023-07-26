@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+
+  <div class="age-calculator">
+
+    <div class="input-field">
+      <div class="input-field__date">
+        <label class="input-field__label" for="day">Day</label>
+        <input type="text" id="day" name="day" placeholder="DD">
+        <span class="input-field__label-error"></span>
+      </div>
+
+      <div class="input-field__date">
+        <label class="input-field__label" for="month">Month</label>
+        <input type="text" id="month" name="month" placeholder="MM">
+        <span class="input-field__label-error"></span>
+      </div>
+
+      <div class="input-field__date">
+        <label class="input-field__label" for="year">Year</label>
+        <input type="text" id="year" name="year" placeholder="YYYY">
+        <span class="input-field__label-error"></span>
+      </div>
+    </div>
+
+    <div class="ruler-container">
+      <hr class="ruler">
+      <img src="./assets/images/icon-arrow.svg" alt="Arrow Button" class="ruler-button">
+    </div>
+
+    <div class="output-field">
+      <p class="output-field__date"><span class="output-field__date-attached">--</span> years</p>
+      <p class="output-field__date"><span class="output-field__date-attached">--</span> months</p>
+      <p class="output-field__date"><span class="output-field__date-attached">--</span> days</p>
+    </div>
+
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/henrikkudesu" target="_blank">henrikkudesu</a>.
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

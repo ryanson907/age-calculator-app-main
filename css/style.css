@@ -1,0 +1,194 @@
+
+/* Estilos gerais */
+:root {
+    --primary-purple: hsl(259, 100%, 65%);
+    --primary-light-red: hsl(0, 100%, 67%);
+  
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-off-white: hsl(0, 0%, 94%);
+    --neutral-light-grey: hsl(0, 0%, 86%);
+    --neutral-smokey-grey: hsl(0, 1%, 44%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--neutral-off-white);
+    color: var(--neutral-smokey-grey);
+    margin: 40px;
+    padding: 0;
+  }
+  
+  /* Estilo para o estado de erro nos campos de entrada */
+  .input-field__date.error input {
+    border: 1px solid var(--primary-light-red); /* Altera a cor da borda para vermelho */
+    color: var(--neutral-off-black); /* Altera a cor do texto para vermelho */
+  }
+  
+  /* Estilos para a calculadora de idade */
+  .age-calculator {
+    background-color: var(--neutral-white);
+    padding: .825em;
+    border-radius: 20px 20px 100px 20px;
+    min-width: 248px;
+  }
+  
+  .age-calculator input {
+    border: 1px solid var(--neutral-light-grey);
+    border-radius: 8px;
+    font-weight: 700;
+    padding: .485em .485em .485em .675em;
+    font-size: 1.25em;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  
+  .input-field__date {
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+    gap: 4px;
+  }
+
+  .input-field__date.error .input-field__label {
+    color: var(--primary-light-red); /* Altera a cor do texto para vermelho */
+  }
+  
+  .input-field__label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75em;
+    font-weight: 700;
+  }
+  
+  .input-field__label-error {
+    display: none; /* Inicialmente, a mensagem de erro estará oculta */
+    color: var(--primary-light-red); /* Cor do texto vermelho para indicar o erro */
+    font-size: 0.66em;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para a régua e o botão */
+  .ruler-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0;
+    position: relative;
+  }
+  
+  .ruler {
+    flex: 1;
+    border: 1px solid var(--neutral-light-grey);
+    margin: 2em 0;
+  }
+  
+  .ruler-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.75em;
+    height: 1.75em;
+    background-color: var(--primary-purple);
+    border-radius: 50%;
+    padding: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .ruler-button:hover {
+    background-color: hsl(228, 45%, 44%); /* Altera a cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilos para os números */
+  .output-field {
+    text-align: left;
+    margin: 2.425em 1em;
+    min-width: 224px;
+  }
+  
+  .output-field__date {
+    color: var(--neutral-off-black);
+    font-size: 2.5em;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+    height: 1em;
+  }
+  
+  .output-field__date-attached {
+    color: var(--primary-purple);
+    font-size: 1.05em;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 16%;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+  
+  /* Estilos para a versão desktop */
+  @media screen and (min-width: 768px) {
+    .age-calculator {
+      padding: 2.825em;
+      margin: auto;
+      width: 30%;
+      min-width: 365px;
+    }
+  
+    .age-calculator input {
+      width: 92%;
+    }
+  
+    .input-field {
+      gap: 42px;
+      width: 80%;
+    }
+  
+    .input-field__label {
+      font-size: 0.825em;
+    }
+  
+    .ruler-container {
+      width: 100%;
+    }
+  
+    .ruler {
+      margin: .4em 0;
+    }
+  
+    .ruler-button {
+      left: 94%;
+      width: 2.2vw;
+      height: 2.2vw;
+    }
+  
+    .output-field__date {
+      /* font-size: 4.5rem; */
+      font-size: clamp(3.2vw, 4.5vw, 4.8vw);
+    }
+  
+    .output-field__date-attached {
+      /* font-size: 4.8rem; */
+      font-size: clamp(3.2vw, 4.8vw);
+    }
+  }
