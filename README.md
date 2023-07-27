@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/henrikkudesu/age-calculator-app-main)
-- Live Site URL: [Add live site URL here](https://henrikkudesu.github.io/age-calculator-app-main)
+- [Solution URL](https://github.com/henrikkudesu/age-calculator-app-main)
+- [Live Site](https://henrikkudesu.github.io/age-calculator-app-main)
 
 ### Built with
 
